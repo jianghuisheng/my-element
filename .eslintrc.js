@@ -32,7 +32,7 @@ module.exports = {
     "no-empty": 2, //不允许出现空的代码块
     "no-empty-character-class": 2, //正则表达式中不允许出现空的字符组
     "no-ex-assign": 2, //在try catch语句中不允许重新分配异常变量
-    "no-extra-boolean-cast": 2, //不允许出现不必要的布尔值转换
+    "no-extra-boolean-cast": 0, //不允许出现不必要的布尔值转换
     "no-extra-parens": 0, //不允许出现不必要的圆括号
     "no-extra-semi": 2, //不允许出现不必要的分号
     "no-func-assign": 2, //不允许重新分配函数声明
@@ -62,12 +62,13 @@ module.exports = {
     ], //在使用typeof表达式比较的时候强制使用有效的字符串
     "block-scoped-var": 2, //将变量声明放在合适的代码块里
     complexity: 0, //限制条件语句的复杂度
-    "consistent-return": 2, //无论有没有返回值都强制要求return语句返回一个值
+    "consistent-return": 0, //无论有没有返回值都强制要求return语句返回一个值
     curly: ["error", "all"], //强制使用花括号的风格
     "default-case": 0, //在switch语句中需要有default语句
-    "dot-notation": ["error", { allowKeywords: false, allowPattern: "" }], //获取对象属性的时候使用点号
+    // "dot-notation": ["error", { allowKeywords: false, allowPattern: "" }], //获取对象属性的时候使用点号
+    "dot-notation": "off", //获取对象属性的时候使用点号
     eqeqeq: ["error", "smart"], //比较的时候使用严格等于
-    "no-alert": 1, //不允许使用alert，confirm，prompt语句
+    "no-alert": 0, //不允许使用alert，confirm，prompt语句
     "no-caller": 2, //不允许使用arguments.callee和arguments.caller属性
     "guard-for-in": 0, //监视for in循环，防止出现不可预料的情况
     "no-div-regex": 2, //不能使用看起来像除法的正则表达式
@@ -158,7 +159,7 @@ module.exports = {
     "semi-spacing": [2, { before: false, after: true }], //分后前后空格
     "sort-vars": 0, //变量声明时排序
     "space-before-blocks": [2, "always"], //块前的空格
-    "space-before-function-paren": [2, { anonymous: "always", named: "never" }], //函数定义时括号前的空格
+    "space-before-function-paren": [0, { anonymous: "always", named: "never" }], //函数定义时括号前的空格
     "space-infix-ops": [2, { int32Hint: true }], //操作符周围的空格
     "keyword-spacing": 2, //关键字前后的空格
     "space-unary-ops": [2, { words: true, nonwords: false }], //一元运算符前后不要加空格
