@@ -1,12 +1,14 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "@/components/Home";
-import Application from "@/components/Application";
-import Config from "@/components/Config";
+
+import Home from "@/components/home/index";
+import SencondType from "@/components/sencondtype/index";
+import Content from "@/components/aircontent/index";
 
 Vue.use(Router);
 
 export default new Router({
+  // mode: "history",
   routes: [
     {
       path: "/",
@@ -14,12 +16,12 @@ export default new Router({
       component: Home
     },
     {
-      path: "/application",
-      component: Application
+      path: "/sencondtype",
+      component: SencondType
     },
     {
-      path: "/config",
-      component: Config
+      path: "/sencondtype/content/:id",
+      component: Content
     }
   ]
 });

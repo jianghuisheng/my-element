@@ -1,3 +1,32 @@
 body {
-  background: lightblue;
+  background: #ffffff;
+}
+
+#app {
+  position: relative;
+  overflow-y: auto;
+  height: 579px;
+}
+
+.el-table td,
+.el-table th {
+  text-align: center !important;
+}
+
+.submitBtns {
+  width: 90%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.table-wrap .el-form--inline .el-form-item__label {
+  width: 155px;
+}
+
+.table-wrap .typeDialog .el-dialog {
+  min-width: 791px;
+}
+
+.avatar-uploader {
+  height: 0;
 }
